@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+  margin: 0;
+}
+
+.calculadora {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 320px;
+}
+
+.estudiante{
+  font-size: 14px;
+  color: #888;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: #f0f0f0;
+  text-align: right;
+  font-size: 24px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.botones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+button {
+  padding: 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #eeeeee;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d4d4d4;
+}
+
+button:active {
+  background-color: #bbbbbb;
+}
+
+button.cero {
+  grid-column: span 2;
+}
+
+button.borrar {
+  grid-column: span 2;
+} 
+
+button:nth-child(3),
+button:nth-child(7),
+button:nth-child(11),
+button:nth-child(15),
+button:nth-child(18) {
+  background-color: #ff9500;
+  color: white;
+  
+}
+
+button:nth-child(3):hover,
+button:nth-child(7):hover,
+button:nth-child(11):hover,
+button:nth-child(15):hover,
+button:nth-child(18):hover {
+  background-color: #e68a00;
+}

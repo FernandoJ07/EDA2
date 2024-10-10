@@ -8,7 +8,6 @@ export const ComponenetApp = () => {
     const [category, setCategory] = useState('')
 
     const onAddCategory = () => {
-        // setCategories([...categories, 'hola'])
         setCategories( list => [...list, category])
         setCategory('')
     }
